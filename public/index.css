@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,300&family=Roboto:ital@1&display=swap');
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.container{
+    padding:  5% 22%;
+    min-height: 100vh;
+    background: linear-gradient(to right, #1586cd, #3c75cc, #6161c3, #8047b1, #992095);
+}
+.title span{
+    border-bottom:2px solid #992095; 
+}
+.title{
+    padding: 15px;
+   
+}
+.content{
+    padding: 0 0;
+    background: white;
+    border-radius: 5px;
+}
+.details-register{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px 20px;
+    column-gap: 50px;
+    row-gap:10px;
+}
+[type=text],[type=email],[type=tel],[type=password]
+{
+    outline: none;
+    border: 1px solid;
+    overflow: hidden;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-color: lightgray;
+    font-size: 15px;
+    border-radius: 2px;
+}
+::placeholder{
+    font-size: 15px;
+}
+.gender{
+    padding: 0px 10px;
+}
+.gender-choice{
+    display: flex;
+    font-size: 16px;
+}
+.male,.female{
+    margin-left: 10px;
+}
+.button-1{
+    padding: 15px 20px;
+}
+.button-1 button{
+    width: 100%;
+    outline: none;
+    background: none;
+    border: none;
+    background:linear-gradient(to right, #1586cd, #3c75cc, #6161c3, #8047b1, #992095);
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+    html{
+        font-size: 80%;
+    }
+    .details-register{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .gender-choice{
+        grid-template-columns: 200px;
+    }
+    .title{
+        padding: 10px;
+        font-size: 10px;
+    }
+    .container{
+        padding:  2% 10%;
+    }
+}
